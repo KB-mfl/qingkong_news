@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>晴空新闻</title>
+    <style media="screen">
+        .guide {
+            position: absolute;
+            top:0;
+            background-color: #484848;
+            width: 100%;
+            height: 50px;
+            color: white;
+        }
+        .weather {
+            font-size: 18px;
+        }
+        .report {
+            position: absolute;
+            top: 0%;
+            right: 4%;
+        }
+        .report a {
+            color: white;
+        }
+        .logo {
+            position: absolute;
+            left: 10%;
+            top: 8%;
+        }
+        .logo div {
+            float: left;
+        }
+        .logo_picture {
+            height:80px;
+            width: 80px;
+        }
+        .left_list {
+            position: absolute;
+            left: 12%;
+            top: 20%;
+        }
+        .left_list li {
+            list-style-type: none;
+            font-size: 24px;
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            border-radius:5px;
+        }
+        .left_list li:hover {
+            background-color: orange;
+            color: white;
+        }
+        .search {
+            position: absolute;
+            right: 15%;
+            top: 8%;
+        }
+        .search_box {
+            height: 25px;
+            width: 150px;
+            border-radius:5px;
+        }
+        .search_button {
+            height: 25px;
+            border-radius:5px;
+        }
+        .news {
+            position: absolute;
+            left: 40%;
+            top: 20%;
+            font-size: 50px;
+        }
+        .main {
+            position: absolute;
+            left: 29%;
+            top: 22%;
+        }
+        .main div {
+            display: none;
+        }
+        .main .show {
+            display: block;
+        }
+        .bottom {
+            position: absolute;
+            bottom: 0;
+            left: 39%;
+        }
+    </style>
+</head>
+<body>
+<div class="guide">
+    <div class="weather">
+        <pre>天气：晴  30°/22°</pre>
+    </div>
+    <div class="report">
+        <h4>
+            <a href="">反馈</a>
+        </h4>
+    </div>
+</div>
+<div class="logo">
+    <div class="">
+        <img src="logo.png" alt="" class="logo_picture">
+    </div>
+    <div class="">
+        <h1>晴空新闻</h1>
+    </div>
+</div>
+<div class="left_list">
+    <ul>
+        <li id="tab1" onclick="changeTab(this.id)" class="selected">推荐</li>
+        <li id="tab2" onclick="changeTab(this.id)">热点</li>
+        <li id="tab3" onclick="changeTab(this.id)">科技</li>
+        <li id="tab4" onclick="changeTab(this.id)">娱乐</li>
+        <li id="tab5" onclick="changeTab(this.id)">游戏</li>
+        <li id="tab6" onclick="changeTab(this.id)">更多</li>
+    </ul>
+</div>
+<span class="main">
+            <div id="c1" class="show">
+                这里是推荐新闻
+            </div>
+            <div id="c2" class="">
+                这里是热点新闻
+            </div>
+            <div id="c3" class="">
+                这里是科技新闻
+            </div>
+            <div id="c4" class="">
+                这里是娱乐新闻
+            </div>
+            <div id="c5" class="">
+                这里是游戏新闻
+            </div>
+            <div id="c6" class="">
+                更多
+            </div>
+        </span>
+<div class="search">
+    <input type="text" name="" value="" placeholder="请输入要查找的内容" class="search_box">
+    <button type="button" name="button" class="search_button">查找</button>
+</div>
+<div class="bottom">
+    <h5>Copyright (c) 2018 Copyright Holder All Rights Reserved.</h5>
+</div>
+</body>
