@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+< lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻门户</title>
+    <link rel="stylesheet" type="text/css" href="news%20web.css">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".img li").eq(0).show();
+            $(".num li").mouseenter(function () {
+                $(this).addClass("change").siblings().removeClass("change");
+                var index=$(this).index();
+                $(".img li").eq(index).fadeIn().siblings().fadeOut();
+            })
+        })
+
+    </script>
+</head>
+    <div id="navigation-bar">
+        <div id="weather">
+            <pre>天气：晴  30°/22°</pre>
+        </div>
+        <div id="new_point">
+            <pre>晴  空  新  闻  各  抒  己  见</pre>
+        </div>
+        <div id="login">
+            <a href="晴空.html">登录</a>
+        </div>
+        <div id="report">
+            <h4>
+                <a href="#">注册</a>
+            </h4>
+        </div>
+    </div>
+    <div id="top">
+        <div id="headline">
+            <div id="top_content">
+                <span class="title"><a href="#">新闻</a></span>
+                <span class="title"><a href="#">体育</a></span>
+                <span class="title"><a href="#">NBA</a></span>
+                <span class="title"><a href="#">娱乐</a></span>
+                <span class="title"><a href="#">财经</a></span>
+                <span class="title"><a href="#">股票</a></span>
+                <span class="title"><a href="#">汽车</a></span>
+                <span class="title"><a href="#">科技</a></span>
+                <span class="title"><a href="#">手机</a></span>
+                <span class="title"><a href="#">数码</a></span>
+                <span class="title"><a href="#">女人</a></span>
+                <span class="title"><a href="#">直播</a></span>
+                <span class="title"><a href="#">视频</a></span>
+                <span class="title"><a href="#">旅游</a></span>
+                <span class="title"><a href="#">房产</a></span>
+                <span class="title"><a href="#">家居</a></span>
+                <span class="title"><a href="#">教育</a></span>
+                <span class="title"><a href="#">读书</a></span>
+                <span class="title"><a href="#">四川</a></span>
+                <span class="title"><a href="#">健康</a></span>
+                <span class="title"><a href="#">彩票</a></span>
+                <span class="title"><a href="#">车险</a></span>
+                <span class="title"><a href="#">海淘</a></span>
+                <span class="title"><a href="#">理财</a></span>
+                <span class="title"><a href="#">艺术</a></span>
+            </div>
+        </div>
+    </div>
+    <hr style="height: 2px;top: 15%;width: 100%;position: absolute" color="red"/>
+    <div id="head-top">
+        <div id="head-top-content">
+            <div id="all-title">
+                <span class="title-1"><a href="#">首页</a></span>
+                <span class="title-1"><a href="#">排行</a></span>
+                <span class="title-1"><a href="#">图片</a></span>
+                <span class="title-1"><a href="#">国内</a></span>
+                <span class="title-1"><a href="#">国际</a></span>
+                <span class="title-1"><a href="#">社会</a></span>
+                <span class="title-1"><a href="#">数读</a></span>
+                <span class="title-1"><a href="#">军属</a></span>
+                <span class="title-1"><a href="#">航空</a></span>
+                <span class="title-1"><a href="#">无人机</a></span>
+                <span class="title-1"><a href="#">新闻学院</a></span>
+                <span class="title-1"><a href="#">政务</a></span>
+                <span class="title-1"><a href="#">公益</a></span>
+                <span class="title-1"><a href="#">媒体</a></span>
+            </div>
+        </div>
+    </div>
+    <hr style="position: absolute;top: 25%;width: 100%;height: 1px" color="darkgrey"/>
+    <div class="lunbotu">
+        <ul class="img">
+            <li><a href="#"><img src="mj的副本.jpg" class="tupian" alt="乔丹"></a></li>
+            <li><a href="#"><img src="罗德曼的副本.jpg" class="tupian" alt="罗德曼"></a></li>
+            <li><a href="#"><img src="哈达威的副本.jpg" class="tupian" alt="哈达威"></a></li>
+            <li><a href="#"><img src="艾弗森的副本.jpg" class="tupian" alt="艾弗森"></a></li>
+        </ul>
+        <ul class="num">
+            <li class="change">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <div class="left btn"><</div>
+        <div class="right btn">></div>
+    </div>
+</body>
+</html>
